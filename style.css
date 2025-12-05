@@ -143,7 +143,7 @@ img{
     border-radius: 20px;
 }
 .right .box .image{
-    height: 30%;
+    height: 25%;
 }
 .right .box .image img{
     margin-top: -10%;
@@ -151,8 +151,8 @@ img{
 }
 .right .box .info{
     color: #fff;
-    height: 30%;
-    margin-top : 10%;
+    height: 20%;
+    /* margin-top : 10%; */
 }
 .right .box .info h1 , .right .box .info h3{
     line-height: 1.8;
