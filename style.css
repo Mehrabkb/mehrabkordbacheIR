@@ -146,6 +146,8 @@ img{
     height: 25%;
 }
 .right .box .image img{
+    width: 50%;
+    height: 100%;
     margin-top: -10%;
     border-radius: 30%;
 }
