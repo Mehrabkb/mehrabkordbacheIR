@@ -142,12 +142,16 @@ img{
     background: radial-gradient(circle,rgba(79, 90, 92, 1) 0%, rgba(60, 60, 66, 1) 50%, rgba(74, 66, 41, 1) 100%);
     border-radius: 20px;
 }
+.right .box .image{
+    height: 30%;
+}
 .right .box .image img{
     margin-top: -10%;
     border-radius: 30%;
 }
 .right .box .info{
     color: #fff;
+    height: 30%;
     margin-top : 10%;
 }
 .right .box .info h1 , .right .box .info h3{
@@ -229,6 +233,7 @@ img{
 
   .side-nav {
     position: sticky;
+    height: 40%;
     top: 20px;
     padding: 16px;
     /* border: 1px solid #e3e6ea; */
