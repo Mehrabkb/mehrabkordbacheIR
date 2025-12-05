@@ -25,6 +25,7 @@
     <meta name="twitter:description" content="برنامه‌نویس و مدرس با تجربه در PHP، Laravel، JavaScript و طراحی سایت وردپرسی.">
     <meta name="twitter:image" content="images/mehrabkb.png">
     <link rel="stylesheet" href="assets/aos/aos.css">
+    <link rel="stylesheet" href="assets/typerjs/jquery.typing.min.css">
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -58,7 +59,10 @@
                     <img src="images/mehrabkb.png" alt="تصویر پروفایل مهراب کردبچه - برنامه‌نویس و مدرس">
                 </div>
                 <div class="info">
-                    <h1>مهراب کردبچه</h1>
+                    <h1 id="typer1"></h1>
+                    <div id="typer1-content" data-delay="1000" style="display: none;">
+                      مهراب کردبچه
+                    </div>
                     <h3>مدرس، برنامه نویس</h3>
                     <p>
                         علاقه‌مند به تحقیق، تدریس و فعالیت در حوزه‌های کامپیوتری
@@ -232,7 +236,9 @@
 
     </div>
     </div>
+    <script src="jquery.min.js"></script>
     <script src="assets/aos/aos.js"></script>
+    <script src="assets/typerjs/jquery.typing.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
