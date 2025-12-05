@@ -113,7 +113,7 @@ img{
     margin : 0 auto;
 }
 
-.wrapper{
+.wrapper-desktop{
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
@@ -159,14 +159,14 @@ img{
 }
 
 
-.wrapper .left{
+.wrapper-desktop .left{
     width: 70%;
     position: relative;
     right: 30%;
 }
 
 
-.wrapper .left .container {
+.wrapper-desktop .left .container {
     max-width: 900px;
     margin: 40px auto;
     background: #fff;
@@ -174,37 +174,37 @@ img{
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   }
-  .wrapper .left h1,.wrapper .left h2 {
+  .wrapper-desktop .left h1,.wrapper-desktop .left h2 {
     color: #2c3e50;
     margin-bottom: 15px;
   }
-  .wrapper .left h1 {
+  .wrapper-desktop .left h1 {
     border-bottom: 3px solid #3498db;
     padding-bottom: 10px;
   }
-  .wrapper .left .section {
+  .wrapper-desktop .left .section {
     margin-bottom: 30px;
   }
-  .wrapper .left .section ul {
+  .wrapper-desktop .left .section ul {
     list-style: none;
     padding: 0;
   }
-  .wrapper .left .section ul li {
+  .wrapper-desktop .left .section ul li {
     background: #ecf0f1;
     margin: 8px 0;
     padding: 10px 15px;
     border-radius: 6px;
     transition: 0.3s;
   }
-  .wrapper .left .section ul li:hover {
+  .wrapper-desktop .left .section ul li:hover {
     background: #d6eaf8;
   }
-  .wrapper .left .contact, .links {
+  .wrapper-desktop .left .contact, .links {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
   }
-  .wrapper .left .contact div, .links a {
+  .wrapper-desktop .left .contact div, .links a {
     background: #3498db;
     color: #fff;
     padding: 8px 15px;
@@ -212,10 +212,105 @@ img{
     text-decoration: none;
     font-size: 14px;
   }
-  .wrapper .left .links a:hover {
+  .wrapper-desktop .left .links a:hover {
     background: #2c81ba;
   }
-  .wrapper .left .contact a{
+  .wrapper-desktop .left .contact a{
     color : #fff;
     text-decoration: none;
+  }
+  .wrapper-mobile{
+    display: none;
+  }
+  .container h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  @media (max-width:1024px) {
+    .wrapper-desktop{
+        display: none;
+    }
+    .wrapper-mobile{
+        display: block;
+    }
+    .wrapper-mobile .container {
+        max-width: 900px;
+        margin: 0px auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      }
+      .wrapper-mobile h1,.wrapper-mobile h2 {
+        color: #2c3e50;
+        margin-bottom: 15px;
+      }
+      .wrapper-mobile h1 {
+        border-bottom: 3px solid #3498db;
+        padding-bottom: 10px;
+      }
+      .wrapper-mobile .section {
+        margin-bottom: 30px;
+      }
+      .wrapper-mobile .section ul {
+        list-style: none;
+        padding: 0;
+      }
+      .wrapper-mobile .section ul li {
+        background: #ecf0f1;
+        margin: 8px 0;
+        padding: 10px 15px;
+        border-radius: 6px;
+        transition: 0.3s;
+      }
+      .wrapper-mobile .section ul li{
+        font-size: .9rem;
+        line-height: 1.8;
+      }
+      .wrapper-mobile .section ul li:hover {
+        background: #d6eaf8;
+      }
+      .wrapper-mobile .contact, .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+      .wrapper-mobile .contact > div{
+        display: inline-block;
+        font-size: .8rem!important;
+      }
+      .wrapper-mobile .contact div, .links a {
+        background: #3498db;
+        color: #fff;
+        padding: 8px 15px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 14px;
+      }
+      .wrapper-mobile .links a:hover {
+        background: #2c81ba;
+      }
+      .wrapper-mobile .contact a{
+        color : #fff;
+        text-decoration: none;
+      }
+      .wrapper-mobile header{
+        display: flex;
+        background : #CFD8DC;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 20px;
+        border-bottom: 1px solid #29B6F6;
+      }
+      .wrapper-mobile header > div{
+        width: 50%;
+        text-align: center;
+      }
+      .wrapper-mobile .left-mobile img{
+        width: 40%;
+        padding: 10px;
+        height: 100px;
+        border-radius: 50%;
+        border: 1px solid #29B6F6;
+      }
   }
